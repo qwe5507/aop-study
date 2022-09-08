@@ -11,7 +11,8 @@ import org.springframework.context.annotation.Import;
 
 @Slf4j
 //@SpringBootTest(properties = {"spring.aop.proxy-target-class=false"}) //JDK 동적 프록시, DI 예외 발생
-@SpringBootTest(properties = {"spring.aop.proxy-target-class=true"}) //CGLIB 프록시, DI 성공
+//@SpringBootTest(properties = {"spring.aop.proxy-target-class=true"}) //CGLIB 프록시, DI 성공
+@SpringBootTest
 @Import(ProxyDIAspect.class)
 public class ProxyDITest {
     @Autowired
